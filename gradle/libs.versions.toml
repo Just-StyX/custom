@@ -15,4 +15,5 @@ junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jun
 thymeleaf = { module = "org.springframework.boot:spring-boot-starter-thymeleaf" }
 springweb = { module = "org.springframework.boot:spring-boot-starter-web" }
 springtest = { module = "org.springframework.boot:spring-boot-starter-test" }
+springactuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
 springtestlauncher = { module = "org.junit.platform:junit-platform-launcher" }

@@ -18,6 +18,7 @@ repositories {
 }
 
 dependencies {
+	implementation(libs.springactuator)
 	implementation(libs.thymeleaf)
 	implementation(libs.springweb)
 	testImplementation(libs.springtest)
