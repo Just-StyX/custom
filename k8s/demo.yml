@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo
+  namespace: demo
   labels:
     app: demo
 spec:
@@ -15,8 +16,8 @@ spec:
         app: demo
     spec:
       containers:
-        - name: catalog-service
-          image: catalog-service
+        - name: demo
+          image: ghcr.io/just-styx/demo:latest
           imagePullPolicy: IfNotPresent
           resources:
             requests:
@@ -49,6 +50,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: demo
+  namespace: demo
   labels:
     app: demo
 spec:
