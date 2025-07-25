@@ -8,4 +8,15 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,metrics,prometheus
+        include: health #,metrics,prometheus
+  otlp:
+    metrics:
+      export:
+        url: http://localhost:4318/v1/metrics
+        step: 10s
+    tracing:
+      endpoint: http://localhost:4318/v1/traces
+
+  tracing:
+    sampling:
+      probability: 1.0

@@ -19,5 +19,8 @@ springtest = { module = "org.springframework.boot:spring-boot-starter-test" }
 springactuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
 springtestlauncher = { module = "org.junit.platform:junit-platform-launcher" }
 micrometer-bom = { module = "io.micrometer:micrometer-bom", version.ref = "micrometer-bom-version" }
+otlp-monitoring = { module = "io.micrometer:micrometer-registry-otlp" }
 prometheus-monitoring = { module = "io.micrometer:micrometer-registry-prometheus" }
 spring-aop = { module = "org.springframework.boot:spring-boot-starter-aop" }
+bridge-otel = { module = "io.micrometer:micrometer-tracing-bridge-otel" }
+exporter-otlp = { module = "io.opentelemetry:opentelemetry-exporter-otlp" }
