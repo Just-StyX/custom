@@ -19,6 +19,9 @@ repositories {
 
 dependencies {
 	implementation(libs.springactuator)
+	implementation(libs.micrometer.bom)
+	implementation(libs.spring.aop)
+	implementation(libs.prometheus.monitoring)
 	implementation(libs.thymeleaf)
 	implementation(libs.springweb)
 	testImplementation(libs.springtest)
